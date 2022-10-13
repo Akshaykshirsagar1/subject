@@ -1,0 +1,21 @@
+<!-- <div class="box">
+    Username : <strong>{{username}}</strong>
+    <br> <br>
+    <input  type="text" placeholder="Update user name" #uname>
+    <button (click)="updateUserName(uname)">Update</button>
+</div> -->
+<div class="card">
+    First Name: <strong>{{user1.firstName}}</strong>
+    <br> <br>
+    Last Name: <strong>{{user1.lastName}}</strong>
+    <br> <br>
+    Mobile Number: <strong>{{user1.mb}}</strong>
+    <br> <br>
+
+    <input type="text" placeholder="First Name" #fname >
+    <input type="text" placeholder="Last Name" #lname class="mt-2">
+   
+    <input type="number" placeholder="Mobile Number" #mb class="mt-2">
+    <br>
+    <button class="btn btn-success" (click)="user(fname, lname, mb)">Update</button>
+</div>
